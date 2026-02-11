@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<!-- saved from url=(0132)blob:https://4l9djaaj4hkq3008gsxfnkuxzlmfgyaf4b7pixphjf0w8ps4n8-h864888888.scf.usercontent.goog/d8bbb0e2-822d-4d3f-ba82-b4b90afe5a31 -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ1OTQzZDdlNWZhYTIxZjcyOTJjMzI3MGY3ZDBjNWJmNDE5MjJmOTciLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNTM4MDgxNTc2MDc1ODA4ODYyNSIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJhODg2OWE5MDYzY2MtZ2VwaGlfbmV0d29ya19kZWVwLmh0bWwtNjgifSwiZXhwIjoxNzcwNzkzNzMwLCJpYXQiOjE3NzA3OTAxMzAsImFsZyI6IlJTMjU2In0.YFkl3S7-H1K5kRkxmPqfhgtvyzq8hBDeFAeQC0Lqs4yd_EHsFb8ZyEZg3eDhWbj_724lY6niVBmTw-vUZS4XDqVYE9I5AK7C_aClhJE4cXuIaSaWRFbPTB6o2LHVOZy2_aA7lIBQkMeFcdvAUogPfxs15wWQWUIY8IeXv2aMJnLxKFPeGip1LfwWO4fsfNAJKB1EHxozqY342QiY6Ak3dXHhmpSbMGYYuti4vKohNNGNDDcXGp74EI02W8A4GNJtn2AiURgr2KYe3XQ1ccHWm1whhik7N0lxVVyYzDsZNf3Q_VH0_4ABSjSvfvz7YohRdKMr858i1bJhYmpecAlqqQ","a8869a9063cc-gephi_network_deep.html-68")</script><script>'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){const d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);const c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{let a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){const b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{const c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){const c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{const c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){const c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);const e=yield c.blob();return new Promise((f,g)=>{const k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){let c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){const c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());let e;try{const f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){const b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");const c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;let c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){const c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{let g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){const g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){const b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{const e=d?(new URL(b,d||void 0)).toString():b;let f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){const [c,,e]=ia.exec(d)||[],f=c,g=e;if(!g)return"";if(g===b)return`src: ${f};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;const c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c;const e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){const d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){const d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){let d=a.cssText;const c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){let g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];const b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){const d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){const g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}const d=new Set;b(a);return d}function ua(a,b){return t(function*(){const d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){const d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){const c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b);var e=yield wa(a,b);e=yield B(e);const f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=
+16384));f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;const c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){const a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){let b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){const b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+</script><script>(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script>
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script>((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-2.5-flash-preview-09-2025","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-2.5-flash-image-preview","imageTransformModelName":"gemini-3-pro-image-preview-11-2025","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"]})</script><script>(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script>(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Knowledge Graph - Interactive Math</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+            font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
+        }
+        #labels-container {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 10;
+        }
+        /* 通用标签样式 */
+        .star-label {
+            position: absolute;
+            color: rgba(200, 240, 255, 0.7);
+            background: rgba(0, 10, 30, 0.5);
+            border: 1px solid rgba(100, 200, 255, 0.2);
+            white-space: nowrap;
+            opacity: 0; 
+            transition: opacity 0.3s, transform 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s;
+            backdrop-filter: blur(1px);
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            pointer-events: auto;
+            cursor: pointer;
+        }
+        .label-primary {
+            padding: 4px 8px; border-radius: 4px; font-size: 11px; transform: translate(25px, -50%); z-index: 20;
+        }
+        .label-primary.active {
+            color: #ffffff; background: rgba(0, 30, 70, 0.9); border-color: #00ffff; font-size: 13px; font-weight: bold; box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+        }
+        .label-primary.visible { opacity: 0.5; }
+        .label-secondary {
+            padding: 2px 5px; border-radius: 2px; font-size: 9px; transform: translate(15px, -50%); z-index: 10; color: rgba(180, 220, 255, 0.6);
+        }
+        .label-secondary.active {
+            opacity: 1; color: #ffffff; background: rgba(0, 20, 40, 0.8); border-color: #00ccff; font-size: 10px; box-shadow: 0 0 10px rgba(0, 200, 255, 0.3);
+        }
+
+        /* 左侧函数信息卡片 */
+        #formula-card {
+            position: absolute;
+            left: 30px; top: 50%;
+            transform: translateY(-50%) translateX(-50px);
+            width: 240px;
+            padding: 25px;
+            background: rgba(2, 12, 24, 0.9);
+            border: 1px solid #4488ff;
+            border-left: 4px solid #4488ff;
+            border-radius: 8px;
+            color: #fff;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            box-shadow: 0 0 30px rgba(0, 100, 255, 0.2);
+            z-index: 100;
+        }
+        #formula-card.show {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(-50%) translateX(0);
+        }
+        #formula-card h2 {
+            margin: 0 0 15px 0;
+            font-size: 20px;
+            color: #00ccff;
+            font-weight: normal;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 8px;
+        }
+        #formula-card .latex {
+            font-family: 'Times New Roman', serif;
+            font-size: 22px;
+            font-style: italic;
+            text-align: center;
+            margin: 20px 0;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
+        #formula-card .desc {
+            font-size: 13px;
+            color: #aaccee;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div id="labels-container"><div class="star-label label-primary" style="display: block; left: 628.483px; top: 344.786px;">中学数学的一般思想</div><div class="star-label label-primary" style="display: block; left: 631.3px; top: 335.1px;">中学数学的解题通法</div><div class="star-label label-primary" style="display: block; left: 699.078px; top: 339.615px;">中学数学解错题的通病</div><div class="star-label label-primary" style="display: block; left: 689.99px; top: 306.039px;">实数运算的基本技巧</div><div class="star-label label-secondary" style="display: block; left: 728.975px; top: 311.61px;">对立统一的辩证思想</div><div class="star-label label-secondary" style="display: block; left: 639.969px; top: 398.826px;">用字母表数与讨论</div><div class="star-label label-secondary" style="display: block; left: 674.368px; top: 274.998px;">换元的思想</div><div class="star-label label-secondary" style="display: block; left: 665.427px; top: 296.546px;">化归的思想</div><div class="star-label label-secondary" style="display: block; left: 658.778px; top: 339.92px;">分解与综合的思想</div><div class="star-label label-secondary" style="display: block; left: 667.256px; top: 308.762px;">递推的思想</div><div class="star-label label-secondary" style="display: block; left: 694.862px; top: 353.249px;">分区讨论法</div><div class="star-label label-secondary" style="display: block; left: 673.845px; top: 392.542px;">数形结合法</div><div class="star-label label-secondary" style="display: block; left: 577.219px; top: 326.97px;">换元法</div><div class="star-label label-secondary" style="display: block; left: 605.191px; top: 345.446px;">参数法</div><div class="star-label label-secondary" style="display: block; left: 674.397px; top: 411.094px;">配方法</div><div class="star-label label-secondary" style="display: block; left: 667.444px; top: 376.462px;">反证法</div><div class="star-label label-secondary" style="display: block; left: 621.043px; top: 267.541px;">韦达定理与△法</div><div class="star-label label-secondary" style="display: block; left: 663.959px; top: 298.03px;">分科法与综合法</div><div class="star-label label-secondary" style="display: block; left: 716.241px; top: 328.497px;">构造法</div><div class="star-label label-secondary" style="display: block; left: 676.771px; top: 345.081px;">特殊值法</div><div class="star-label label-secondary" style="display: block; left: 691.039px; top: 389.076px;">忽视定义域</div><div class="star-label label-secondary" style="display: block; left: 684.982px; top: 402.876px;">忽视充要条件</div><div class="star-label label-secondary" style="display: block; left: 755.98px; top: 345.765px;">忽视概念法则</div><div class="star-label label-secondary" style="display: block; left: 717.075px; top: 284.284px;">忽视隐含条件</div><div class="star-label label-secondary" style="display: block; left: 754.606px; top: 312.238px;">忽视特殊性</div><div class="star-label label-secondary" style="display: block; left: 699.377px; top: 285.304px;">忽视图形特征</div><div class="star-label label-secondary" style="display: block; left: 740.385px; top: 342.336px;">忽视存在性</div><div class="star-label label-secondary" style="display: block; left: 642.145px; top: 348.761px;">换元技巧</div><div class="star-label label-secondary" style="display: block; left: 726.67px; top: 276.756px;">拆项与集项</div><div class="star-label label-secondary" style="display: block; left: 705.274px; top: 375.573px;">化简条件与结论</div><div class="star-label label-secondary" style="display: block; left: 651.654px; top: 282.621px;">四个二次的互换</div><div class="star-label label-secondary" style="display: block; left: 636.964px; top: 376.407px;">互逆转化</div><div class="star-label label-secondary" style="display: block; left: 722.202px; top: 273.027px;">比值代换</div><div class="star-label label-secondary" style="display: block; left: 689.568px; top: 303.944px;">同构或转化</div><div class="star-label label-secondary" style="display: block; left: 629.228px; top: 304.85px;">0和1的妙用</div><div class="star-label label-secondary" style="display: block; left: 683.268px; top: 395.184px;">通分与相乘</div><div class="star-label label-secondary" style="display: block; left: 648.762px; top: 364.226px;">韦达定理</div><div class="star-label label-secondary" style="display: block; left: 691.907px; top: 394.67px;">三角代换</div><div class="star-label label-secondary" style="display: block; left: 684.978px; top: 270.648px;">数形结合</div></div>
+    
+    <!-- 函数信息卡片 -->
+    <div id="formula-card">
+        <h2 id="fc-title">Circle</h2>
+        <div id="fc-latex" class="latex">x² + y² = r²</div>
+        <div id="fc-desc" class="desc">The set of all points in a plane that are at a given distance from a given point.</div>
+    </div>
+
+    <script>
+        // --- 核心数据 (JSON) ---
+        const KNOWLEDGE_DATA = {
+          "structure": [
+            { "chapter_id": "1", "chapter_title": "中学数学的一般思想", "sections": [ { "section_title": "对立统一的辩证思想" }, { "section_title": "用字母表数与讨论" }, { "section_title": "换元的思想" }, { "section_title": "化归的思想" }, { "section_title": "分解与综合的思想" }, { "section_title": "递推的思想" } ] },
+            { "chapter_id": "2", "chapter_title": "中学数学的解题通法", "sections": [ { "section_title": "分区讨论法" }, { "section_title": "数形结合法" }, { "section_title": "换元法" }, { "section_title": "参数法" }, { "section_title": "配方法" }, { "section_title": "反证法" }, { "section_title": "韦达定理与△法" }, { "section_title": "分科法与综合法" }, { "section_title": "构造法" }, { "section_title": "特殊值法" } ] },
+            { "chapter_id": "3", "chapter_title": "中学数学解错题的通病", "sections": [ { "section_title": "忽视定义域" }, { "section_title": "忽视充要条件" }, { "section_title": "忽视概念法则" }, { "section_title": "忽视隐含条件" }, { "section_title": "忽视特殊性" }, { "section_title": "忽视图形特征" }, { "section_title": "忽视存在性" } ] },
+            { "chapter_id": "4", "chapter_title": "实数运算的基本技巧", "sections": [ { "section_title": "换元技巧" }, { "section_title": "拆项与集项" }, { "section_title": "化简条件与结论" }, { "section_title": "四个二次的互换" }, { "section_title": "互逆转化" }, { "section_title": "比值代换" }, { "section_title": "同构或转化" }, { "section_title": "0和1的妙用" }, { "section_title": "通分与相乘" }, { "section_title": "韦达定理" }, { "section_title": "三角代换" }, { "section_title": "数形结合" } ] }
+          ]
+        };
+
+        // --- 配置 ---
+        const primaryCount = KNOWLEDGE_DATA.structure.length;
+        const secondaryGroups = KNOWLEDGE_DATA.structure.map(ch => ch.sections.length);
+        
+        const CONFIG = {
+            // [修改] 移除了 nodeCount: 800 和 normalSize
+            primaryCount: primaryCount,
+            secondaryGroups: secondaryGroups, 
+            tertiaryRange: [5, 6],
+            connectDistance: 110,
+            primarySize: 24.0, 
+            secondarySize: 6.0,
+            tertiarySize: 3.5, 
+            primaryIntensity: 6.0,    
+            secondaryIntensity: 1.5,
+            tertiaryIntensity: 0.8, 
+            highlightPrimary: 10.0,
+            highlightSecondary: 4.0,  
+            highlightTertiary: 2.5,
+            scalePulse: 1.2,   
+            scaleBreath: 1.5,  
+            scaleBreathTertiary: 1.05, 
+            bloomStrength: 2.5, 
+            bloomRadius: 0.6,
+            bloomThreshold: 0.15
+        };
+
+        const scene = new THREE.Scene();
+        scene.fog = new THREE.FogExp2(0x020205, 0.0004); 
+
+        const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 10000);
+        camera.position.z = 1400; 
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.toneMapping = THREE.ReinhardToneMapping;
+        renderer.toneMappingExposure = 1.0;
+        document.body.appendChild(renderer.domElement);
+
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.autoRotate = true;
+        controls.autoRotateSpeed = 0.15;
+
+        const renderScene = new THREE.RenderPass(scene, camera);
+        const bloomPass = new THREE.UnrealBloomPass(
+            new THREE.Vector2(window.innerWidth, window.innerHeight),
+            1.5, 0.4, 0.85
+        );
+        bloomPass.threshold = CONFIG.bloomThreshold;
+        bloomPass.strength = CONFIG.bloomStrength;
+        bloomPass.radius = CONFIG.bloomRadius;
+
+        const composer = new THREE.EffectComposer(renderer);
+        composer.addPass(renderScene);
+        composer.addPass(bloomPass);
+
+        function getGlowTexture() {
+            const size = 64;
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
+            const context = canvas.getContext('2d');
+            const center = size / 2;
+            const gradient = context.createRadialGradient(center, center, 0, center, center, center);
+            gradient.addColorStop(0, 'rgba(255, 255, 255, 1)'); 
+            gradient.addColorStop(0.2, 'rgba(255, 255, 255, 0.6)'); 
+            gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.2)'); 
+            gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+            context.fillStyle = gradient;
+            context.fillRect(0, 0, size, size);
+            return new THREE.Texture(canvas);
+        }
+        const glowTexture = getGlowTexture();
+        glowTexture.needsUpdate = true;
+
+        // --- 节点生成 ---
+        const nodesData = []; 
+        function randomVec3(baseR, varR) {
+            const theta = Math.random() * Math.PI * 2;
+            const phi = Math.acos((Math.random() * 2) - 1);
+            const r = baseR + Math.random() * varR;
+            return new THREE.Vector3(
+                r * Math.sin(phi) * Math.cos(theta),
+                r * Math.sin(phi) * Math.sin(theta),
+                r * Math.cos(phi)
+            );
+        }
+
+        const primaryIndices = [];
+        for(let i=0; i<CONFIG.primaryCount; i++) {
+            const chapter = KNOWLEDGE_DATA.structure[i];
+            nodesData.push({
+                id: nodesData.length,
+                pos: randomVec3(120, 80),
+                type: 'primary',
+                group: i,
+                labelText: chapter.chapter_title,
+                baseColor: new THREE.Color(0.8, 0.9, 1.0).multiplyScalar(CONFIG.primaryIntensity), 
+                baseSize: CONFIG.primarySize
+            });
+            primaryIndices.push(nodesData.length - 1);
+        }
+
+        const secondaryIndices = []; 
+        CONFIG.secondaryGroups.forEach((count, groupIndex) => {
+            const parentPos = nodesData[primaryIndices[groupIndex]].pos;
+            const chapter = KNOWLEDGE_DATA.structure[groupIndex];
+            for(let k=0; k<count; k++) {
+                const section = chapter.sections[k];
+                const finalPos = new THREE.Vector3().lerpVectors(parentPos, randomVec3(280, 120), 0.5);
+                const myId = nodesData.length;
+                nodesData.push({
+                    id: myId,
+                    pos: finalPos,
+                    type: 'secondary',
+                    parentId: primaryIndices[groupIndex],
+                    group: groupIndex, 
+                    labelText: section.section_title,
+                    baseColor: new THREE.Color(1.0, 0.7, 0.2).multiplyScalar(CONFIG.secondaryIntensity), 
+                    baseSize: CONFIG.secondarySize
+                });
+                secondaryIndices.push(myId);
+            }
+        });
+
+        secondaryIndices.forEach(secId => {
+            const secNode = nodesData[secId];
+            const count = Math.floor(Math.random() * (CONFIG.tertiaryRange[1] - CONFIG.tertiaryRange[0] + 1)) + CONFIG.tertiaryRange[0];
+            for(let k=0; k<count; k++) {
+                const finalPos = secNode.pos.clone().add(randomVec3(50, 30));
+                nodesData.push({
+                    id: nodesData.length,
+                    pos: finalPos,
+                    type: 'tertiary',
+                    parentId: secId, 
+                    rootGroupId: secNode.group, 
+                    baseColor: new THREE.Color(0.2, 0.9, 0.6).multiplyScalar(CONFIG.tertiaryIntensity), 
+                    baseSize: CONFIG.tertiarySize
+                });
+            }
+        });
+        
+        // [修改] 移除了背景填充星 (Filler Nodes) 的生成逻辑
+
+        // 核心节点粒子
+        const pGeo = new THREE.BufferGeometry();
+        const pPos = [], pCol = [], pSize = [];
+        const initialSizes = [], initialColors = []; 
+
+        nodesData.forEach(n => {
+            pPos.push(n.pos.x, n.pos.y, n.pos.z);
+            pCol.push(n.baseColor.r, n.baseColor.g, n.baseColor.b);
+            pSize.push(n.baseSize);
+            initialSizes.push(n.baseSize);
+            initialColors.push(n.baseColor.clone());
+        });
+
+        pGeo.setAttribute('position', new THREE.Float32BufferAttribute(pPos, 3));
+        pGeo.setAttribute('color', new THREE.Float32BufferAttribute(pCol, 3));
+        pGeo.setAttribute('size', new THREE.Float32BufferAttribute(pSize, 1));
+
+        const pMat = new THREE.ShaderMaterial({
+            uniforms: { 
+                pointTexture: { value: glowTexture }, 
+                uTime: { value: 0.0 },
+                uGlobalBrightness: { value: 1.0 } // 新增全局亮度控制
+            },
+            vertexShader: `
+                attribute float size;
+                varying vec3 vColor;
+                uniform float uTime;
+                uniform float uGlobalBrightness;
+                float rand(vec2 co){ return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453); }
+                void main() {
+                    // 应用全局亮度
+                    vColor = color * uGlobalBrightness; 
+                    vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+                    float breath = 1.0;
+                    
+                    if (size >= 20.0) {
+                        breath = 1.0 + 0.3 * sin(uTime * 1.5);
+                    } 
+                    else if (size < 10.0) {
+                         float offset = rand(position.xy) * 10.0;
+                         float speed = 1.0 + rand(position.yz) * 1.5;
+                         breath = 0.8 + 0.3 * sin(uTime * speed + offset);
+                    }
+                    
+                    gl_PointSize = size * breath * ( 1000.0 / -mvPosition.z ); gl_Position = projectionMatrix * mvPosition;
+                }
+            `,
+            fragmentShader: `
+                uniform sampler2D pointTexture;
+                varying vec3 vColor;
+                void main() {
+                    vec4 texColor = texture2D( pointTexture, gl_PointCoord );
+                    gl_FragColor = vec4( vColor, 1.0 ) * texColor;
+                    if ( gl_FragColor.a < 0.05 ) discard;
+                }
+            `,
+            blending: THREE.AdditiveBlending,
+            depthTest: false,
+            transparent: true,
+            vertexColors: true
+        });
+        const particleSystem = new THREE.Points(pGeo, pMat);
+        scene.add(particleSystem);
+
+        // --- 连线数据 ---
+        const edges = []; 
+        function addEdge(i, j, type) { edges.push({ u: i, v: j, type: type }); }
+        nodesData.forEach(n => { if (n.type === 'secondary') addEdge(n.id, n.parentId, 'ps'); if (n.type === 'tertiary') addEdge(n.id, n.parentId, 'st'); });
+        const groups = {}; nodesData.forEach(n => { if (n.type === 'secondary') { if (!groups[n.group]) groups[n.group] = []; groups[n.group].push(n.id); } });
+        Object.values(groups).forEach(g => { for(let i=0; i<g.length; i++) for(let j=i+1; j<g.length; j++) addEdge(g[i], g[j], 'ss'); });
+        const tGroups = {}; nodesData.forEach(n => { if (n.type === 'tertiary') { if (!tGroups[n.parentId]) tGroups[n.parentId] = []; tGroups[n.parentId].push(n.id); } });
+        Object.values(tGroups).forEach(g => { for(let i=0; i<g.length; i++) for(let j=i+1; j<g.length; j++) addEdge(g[i], g[j], 'tt'); });
+        
+        // [修改] 移除了背景点阵之间的连线生成 (BG Links loop removed)
+
+        // --- 连线渲染 ---
+        const lineGeo = new THREE.CylinderGeometry(0.3, 0.3, 1, 5, 1);
+        lineGeo.translate(0, 0.5, 0); lineGeo.rotateX(Math.PI / 2);
+        const lineUserData = { uTime: { value: 0.0 } };
+        const lineMat = new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 1.0, blending: THREE.AdditiveBlending, depthWrite: false });
+        lineMat.onBeforeCompile = (shader) => {
+            shader.uniforms.uTime = lineUserData.uTime;
+            shader.vertexShader = `
+                attribute float instanceMode;
+                varying float vMode;
+                varying vec3 vPos;
+                
+                ${shader.vertexShader}
+            `.replace('#include <begin_vertex>', `#include <begin_vertex>\n vMode = instanceMode; vPos = (instanceMatrix * vec4(0.0, 0.0, 0.0, 1.0)).xyz;`);
+            shader.fragmentShader = `
+                uniform float uTime;
+                varying float vMode;
+                varying vec3 vPos;
+                float rand(vec3 co){ return fract(sin(dot(co.xyz ,vec3(12.9898,78.233,45.164))) * 43758.5453); }
+                ${shader.fragmentShader}
+            `.replace('vec4 diffuseColor = vec4( diffuse, opacity );', `vec3 col = diffuse; float alpha = opacity; if (vMode < 0.5) { alpha = 0.02; } else if (vMode < 1.5) { float r = rand(vPos); float speed = 0.5 + 1.5 * r; float offset = r * 100.0; float phase = uTime * speed + offset; float breath = 0.2 + 0.5 * (0.5 + 0.5 * sin(phase)); alpha = breath; } else { alpha = 0.9; } vec4 diffuseColor = vec4( col, alpha );`);
+        };
+
+        const linesMesh = new THREE.InstancedMesh(lineGeo, lineMat, edges.length);
+        const dummy = new THREE.Object3D();
+        const initialTransforms = []; 
+        const modeArray = new Float32Array(edges.length);
+        const colCyan = new THREE.Color(0.1, 0.8, 1.0); const colWhite = new THREE.Color(0.8, 0.8, 0.8); const colGreen = new THREE.Color(0.2, 0.9, 0.5); const colGreenDim = new THREE.Color(0.14, 0.63, 0.35); const colFade = new THREE.Color(0.2, 0.2, 0.2);
+        const colBg = new THREE.Color(0.1, 0.3, 0.5); // BG color
+
+        edges.forEach((e, i) => {
+            const u = nodesData[e.u]; const v = nodesData[e.v];
+            dummy.position.copy(u.pos); dummy.lookAt(v.pos);
+            const dist = u.pos.distanceTo(v.pos);
+            initialTransforms.push({ pos: u.pos, lookAt: v.pos, dist: dist, quaternion: dummy.quaternion.clone(), type: e.type });
+            let widthScale = CONFIG.scaleBreath;
+            if (e.type === 'st' || e.type === 'tt') widthScale = CONFIG.scaleBreathTertiary;
+            else if (e.type === 'bg') widthScale = 0.8;
+            dummy.scale.set(widthScale, widthScale, dist); dummy.updateMatrix(); linesMesh.setMatrixAt(i, dummy.matrix);
+            
+            if (e.type === 'st' || e.type === 'tt') linesMesh.setColorAt(i, colGreenDim); 
+            else if (e.type === 'bg') linesMesh.setColorAt(i, colBg);
+            else linesMesh.setColorAt(i, colCyan);
+            modeArray[i] = 1.0;
+        });
+        linesMesh.geometry.setAttribute('instanceMode', new THREE.InstancedBufferAttribute(modeArray, 1));
+        scene.add(linesMesh);
+
+        // --- NEW: Function Cluster Background (Math Function Cluster) ---
+        const functionSystem = new THREE.Group();
+        scene.add(functionSystem);
+        
+        const funcMatBeamBase = new THREE.MeshBasicMaterial({ color: 0x3366aa, transparent: true, opacity: 0.25, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide });
+        const funcMatCursorBase = new THREE.PointsMaterial({ map: glowTexture, color: 0xffffff, size: 20, transparent: true, opacity: 1.0, blending: THREE.AdditiveBlending, depthTest: false });
+
+        // 函数模板 (含元数据)
+        const funcTemplates = [
+            { id: 'circle', name: "Circle", latex: "x^2 + y^2 = r^2", desc: "A set of all points in a plane that are at a given distance from a given point.", getPos: (t) => new THREE.Vector3(Math.cos(t), Math.sin(t), 0), range: [0, Math.PI * 2], scale: 80, closed: true },
+            { id: 'sine', name: "Sine Wave", latex: "y = \\sin(x)", desc: "A mathematical curve that describes a smooth periodic oscillation.", getPos: (t) => new THREE.Vector3(t, Math.sin(t), 0), range: [-Math.PI, Math.PI], scale: 40, closed: false },
+            { id: 'spiral', name: "Archimedean Spiral", latex: "r = a + b\\theta", desc: "The locus of a point moving away from a fixed point with a constant speed along a line which rotates with constant angular velocity.", getPos: (t) => new THREE.Vector3(0.2*t*Math.cos(t), 0.2*t*Math.sin(t), t*0.1), range: [0, 30], scale: 30, closed: false },
+            { id: 'lemniscate', name: "Lemniscate", latex: "(x^2+y^2)^2 = 2a^2(x^2-y^2)", desc: "A plane curve with a characteristic figure-eight shape.", getPos: (t) => { const d = 1 + Math.sin(t)**2; return new THREE.Vector3((Math.cos(t))/d, (Math.cos(t)*Math.sin(t))/d, 0); }, range: [0, Math.PI*2], scale: 120, closed: true },
+            { id: 'lissajous', name: "Lissajous Curve", latex: "x=A\\sin(at+\\delta), y=B\\sin(bt)", desc: "The graph of a system of parametric equations which describe complex harmonic motion.", getPos: (t) => new THREE.Vector3(Math.sin(t), Math.sin(2*t), Math.sin(3*t)), range: [0, Math.PI*2], scale: 80, closed: true },
+            { id: 'parabola', name: "Parabola", latex: "y = ax^2 + bx + c", desc: "A symmetrical open plane curve formed by the intersection of a cone with a plane parallel to its side.", getPos: (t) => new THREE.Vector3(t, t*t, 0), range: [-1.2, 1.2], scale: 50, closed: false },
+            { id: 'helix', name: "Helix", latex: "x=r\\cos t, y=r\\sin t, z=ct", desc: "A smooth space curve, like a corkscrew.", getPos: (t) => new THREE.Vector3(Math.cos(t), Math.sin(t), t*0.2), range: [-10, 10], scale: 30, closed: false },
+            { id: 'cardioid', name: "Cardioid", latex: "r = a(1 - \\sin\\theta)", desc: "A plane curve traced by a point on the perimeter of a circle that is rolling around a fixed circle of the same radius.", getPos: (t) => { const r=1-Math.sin(t); return new THREE.Vector3(r*Math.cos(t), r*Math.sin(t), 0); }, range: [0, Math.PI*2], scale: 80, closed: true },
+            { id: 'rose', name: "Rose Curve", latex: "r = a\\cos(k\\theta)", desc: "A sinusoid plotted in polar coordinates.", getPos: (t) => new THREE.Vector3(Math.cos(2*t)*Math.cos(t), Math.cos(2*t)*Math.sin(t), 0), range: [0, Math.PI*2], scale: 90, closed: true },
+            { id: 'torus', name: "Torus Knot", latex: "x=cos(3t)...", desc: "A knot which lies on the surface of an unknotted torus in R3.", getPos: (t) => new THREE.Vector3((2+Math.cos(3*t))*Math.cos(2*t), (2+Math.cos(3*t))*Math.sin(2*t), Math.sin(3*t)), range: [0, Math.PI*2], scale: 50, closed: true }
+        ];
+
+        const animatedFunctions = [];
+        const bgInteractables = [];
+
+        for(let i=0; i<80; i++) {
+            const template = funcTemplates[Math.floor(Math.random() * funcTemplates.length)];
+            const group = new THREE.Group();
+            // 绑定数据到 Group
+            group.userData = { isBackground: true, templateId: template.id, info: template, originalScale: template.scale };
+            
+            // [修改] 缩放范围调整，增加差异性 (0.3 ~ 3.3)
+            const randomScale = 0.3 + Math.random() * 3.0;
+            const pts = []; const steps = 200; 
+            for(let j=0; j<=steps; j++) { const t = template.range[0] + (template.range[1]-template.range[0])*(j/steps); pts.push(template.getPos(t).multiplyScalar(template.scale * randomScale)); }
+            
+            const curve = new THREE.CatmullRomCurve3(pts); curve.closed = template.closed;
+            
+            const tubeGeo = new THREE.TubeGeometry(curve, 400, 0.3, 8, template.closed);
+            
+            const myMatBeam = funcMatBeamBase.clone();
+            const tubeMesh = new THREE.Mesh(tubeGeo, myMatBeam); 
+            group.add(tubeMesh);
+            
+            const cursorGeo = new THREE.BufferGeometry(); cursorGeo.setAttribute('position', new THREE.Float32BufferAttribute([0,0,0], 3));
+            
+            const myMatCursor = funcMatCursorBase.clone();
+            const cursorPoint = new THREE.Points(cursorGeo, myMatCursor); 
+            group.add(cursorPoint);
+            
+            const pos = randomVec3(350, 250); 
+            group.position.copy(pos); 
+            group.lookAt(0,0,0); 
+            group.rotateZ(Math.random() * Math.PI * 2);
+            
+            functionSystem.add(group);
+            
+            bgInteractables.push(tubeMesh); 
+            bgInteractables.push(cursorPoint); 
+            
+            tubeMesh.userData.parentGroup = group;
+            cursorPoint.userData.parentGroup = group;
+
+            animatedFunctions.push({ 
+                cursor: cursorPoint, 
+                func: template, 
+                scale: template.scale * randomScale, 
+                time: Math.random() * 100, 
+                speed: 0.2 + Math.random() * 0.4,
+                materials: [myMatBeam, myMatCursor],
+                group: group
+            });
+        }
+
+        // --- 标签系统 (Labels) ---
+        const labelContainer = document.getElementById('labels-container');
+        const labelObjects = [];
+
+        nodesData.forEach(node => {
+            if (node.type === 'primary' || node.type === 'secondary') {
+                const div = document.createElement('div');
+                div.textContent = node.labelText;
+                div.className = node.type === 'primary' ? 'star-label label-primary' : 'star-label label-secondary';
+                labelContainer.appendChild(div);
+                labelObjects.push({ div: div, nodeId: node.id, type: node.type, groupId: node.group });
+            }
+        });
+
+        function updateLabelsState(activeNodeIndex, activeType, activeGroup) {
+            const hasSelection = (activeNodeIndex !== -1);
+            labelObjects.forEach(obj => {
+                const div = obj.div;
+                div.style.opacity = '0'; div.classList.remove('active'); div.classList.remove('visible');
+                if (!hasSelection) return;
+
+                if (activeType === 'primary') {
+                    if (obj.type === 'primary') {
+                        div.style.opacity = '1';
+                        if (obj.groupId === activeGroup) div.classList.add('active'); else div.classList.add('visible');
+                    }
+                } else {
+                    if (obj.groupId === activeGroup) {
+                        if (obj.type === 'primary') { div.style.opacity = '1'; div.classList.add('active'); }
+                        const targetSecId = (activeType === 'secondary') ? activeNodeIndex : nodesData[activeNodeIndex].parentId;
+                        if (obj.type === 'secondary' && obj.nodeId === targetSecId) { div.style.opacity = '1'; div.classList.add('active'); }
+                    }
+                }
+            });
+        }
+
+        function updateLabelPositions() {
+            const tempV = new THREE.Vector3();
+            labelObjects.forEach(obj => {
+                if(obj.div.style.opacity === '0') { obj.div.style.display = 'none'; return; }
+                const node = nodesData[obj.nodeId]; tempV.copy(node.pos); tempV.project(camera);
+                if (tempV.z > 1.0 || Math.abs(tempV.x) > 1.1 || Math.abs(tempV.y) > 1.1) { obj.div.style.display = 'none'; } 
+                else { 
+                    obj.div.style.display = 'block'; 
+                    obj.div.style.left = `${(tempV.x * .5 + .5) * window.innerWidth}px`; 
+                    obj.div.style.top = `${(tempV.y * -.5 + .5) * window.innerHeight}px`; 
+                }
+            });
+        }
+
+        // --- 全局交互状态 ---
+        const APP_STATE = {
+            mode: 'normal', 
+            focusedBgId: null, 
+            targetCoreBrightness: 1.0,
+            currentCoreBrightness: 1.0,
+            selectedCoreNode: -1
+        };
+
+        const cardTitle = document.getElementById('fc-title');
+        const cardLatex = document.getElementById('fc-latex');
+        const cardDesc = document.getElementById('fc-desc');
+        const cardEl = document.getElementById('formula-card');
+
+        // --- 交互 ---
+        const raycaster = new THREE.Raycaster(); 
+        const mouse = new THREE.Vector2(); 
+        
+        function updateLinkVisuals(selectedNodeIndex) {
+            const modeAttr = linesMesh.geometry.attributes.instanceMode; 
+            const hasSelection = selectedNodeIndex !== -1;
+            
+            if (hasSelection) {
+                APP_STATE.mode = 'core_active';
+                APP_STATE.targetCoreBrightness = 1.0;
+            } else {
+                if (APP_STATE.mode === 'core_active') {
+                    APP_STATE.mode = 'normal';
+                }
+            }
+
+            let activeGroup = -1; let selectedType = 'none'; let selectedNode = null;
+            if (hasSelection) { 
+                selectedNode = nodesData[selectedNodeIndex]; selectedType = selectedNode.type;
+                if (selectedType === 'primary') activeGroup = selectedNode.group;
+                else if (selectedType === 'secondary') activeGroup = selectedNode.group;
+                else if (selectedType === 'tertiary') activeGroup = selectedNode.rootGroupId;
+            }
+            updateLabelsState(selectedNodeIndex, selectedType, activeGroup);
+
+            for (let i = 0; i < edges.length; i++) {
+                const edge = edges[i]; const info = initialTransforms[i];
+                let targetScale = CONFIG.scaleBreath; let targetColor = colCyan; if (edge.type === 'st' || edge.type === 'tt') { targetScale = CONFIG.scaleBreathTertiary; targetColor = colGreenDim; } else if (edge.type === 'bg') { targetScale = 0.8; targetColor = new THREE.Color(0.1, 0.3, 0.5); }
+                let targetMode = 1.0; 
+                if (hasSelection) {
+                    targetColor = colFade; targetMode = 0.0; targetScale = CONFIG.scaleBreath; 
+                    const uNode = nodesData[edge.u]; const vNode = nodesData[edge.v];
+                    if (selectedType === 'primary') {
+                        const groupId = activeGroup; let inGroup = false;
+                        if ((edge.type === 'ps' || edge.type === 'ss') && uNode.group === groupId && vNode.group === groupId) inGroup = true;
+                        if ((edge.type === 'st' || edge.type === 'tt') && uNode.rootGroupId === groupId) inGroup = true;
+                        if (inGroup) { if (edge.type === 'ps') { targetColor = colWhite; targetMode = 2.0; targetScale = CONFIG.scalePulse; } else { targetColor = (edge.type === 'st' || edge.type === 'tt') ? colGreenDim : colCyan; targetMode = 1.0; if(edge.type === 'st' || edge.type === 'tt') targetScale = CONFIG.scaleBreathTertiary; } }
+                    } else if (selectedType === 'secondary') {
+                         const groupId = activeGroup;
+                        if (edge.type === 'ps') { if (edge.u === selectedNodeIndex) { targetColor = colWhite; targetMode = 2.0; targetScale = CONFIG.scalePulse; } }
+                        else if (edge.type === 'ss') { if (uNode.group === groupId && vNode.group === groupId) { targetColor = colCyan; targetMode = 1.0; } }
+                        else if (edge.type === 'st') { if (edge.v === selectedNodeIndex) { targetColor = colGreenDim; targetMode = 1.0; targetScale = CONFIG.scaleBreathTertiary; } }
+                        else if (edge.type === 'tt') { if (uNode.parentId === selectedNodeIndex && vNode.parentId === selectedNodeIndex) { targetColor = colGreenDim; targetMode = 1.0; targetScale = CONFIG.scaleBreathTertiary; } }
+                    } else if (selectedType === 'tertiary') {
+                        const parentId = nodesData[selectedNodeIndex].parentId;
+                        if (edge.type === 'st') { if (edge.u === selectedNodeIndex) { targetColor = colWhite; targetMode = 2.0; targetScale = CONFIG.scalePulse; } }
+                        else if (edge.type === 'ps') { if (edge.u === parentId) { targetColor = colWhite; targetMode = 2.0; targetScale = CONFIG.scalePulse; } }
+                        else if (edge.type === 'tt') { if (uNode.parentId === parentId && vNode.parentId === parentId) { targetColor = colGreenDim; targetMode = 1.0; targetScale = CONFIG.scaleBreathTertiary; } }
+                    }
+                }
+                dummy.position.copy(info.pos); dummy.lookAt(dummy.position.clone().add(info.lookAt.clone().sub(info.pos))); dummy.scale.set(targetScale, targetScale, info.dist); dummy.updateMatrix();
+                linesMesh.setMatrixAt(i, dummy.matrix); linesMesh.setColorAt(i, targetColor); modeAttr.setX(i, targetMode);
+            }
+            linesMesh.instanceMatrix.needsUpdate = true; linesMesh.instanceColor.needsUpdate = true; modeAttr.needsUpdate = true;
+        }
+
+        function resetState() {
+             if (APP_STATE.selectedCoreNode !== -1) {
+                 for(let i=0; i<nodesData.length; i++) {
+                     const c = initialColors[i];
+                     if(c) {
+                        pGeo.attributes.color.setXYZ(i, c.r, c.g, c.b);
+                        pGeo.attributes.size.setX(i, initialSizes[i]);
+                     }
+                 }
+                 pGeo.attributes.color.needsUpdate = true; pGeo.attributes.size.needsUpdate = true;
+                 APP_STATE.selectedCoreNode = -1;
+             }
+             updateLinkVisuals(-1);
+             APP_STATE.mode = 'normal';
+             APP_STATE.focusedBgId = null;
+             APP_STATE.targetCoreBrightness = 1.0;
+             cardEl.classList.remove('show');
+        }
+
+        function onPointerDown(event) {
+            event.preventDefault(); mouse.x = (event.clientX / window.innerWidth) * 2 - 1; mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+            raycaster.setFromCamera(mouse, camera);
+            
+            raycaster.params.Points.threshold = 15;
+            const coreIntersects = raycaster.intersectObject(particleSystem);
+            
+            if (coreIntersects.length > 0) {
+                const idx = coreIntersects[0].index;
+                const node = nodesData[idx];
+                if (node.type !== 'normal') {
+                    resetState(); 
+                    controls.autoRotate = false; 
+                    APP_STATE.selectedCoreNode = idx;
+                    APP_STATE.mode = 'core_active';
+                    APP_STATE.targetCoreBrightness = 1.0;
+
+                    for(let i=0; i<nodesData.length; i++) {
+                         const c = initialColors[i];
+                         if(c) {
+                            pGeo.attributes.color.setXYZ(i, c.r, c.g, c.b);
+                            pGeo.attributes.size.setX(i, initialSizes[i]);
+                         }
+                    }
+                    let highlightIntensity = 1.0;
+                    if (node.type === 'primary') highlightIntensity = CONFIG.highlightPrimary;
+                    else if (node.type === 'secondary') highlightIntensity = CONFIG.highlightSecondary;
+                    else if (node.type === 'tertiary') highlightIntensity = CONFIG.highlightTertiary;
+                    pGeo.attributes.color.setXYZ(idx, 0.8 * highlightIntensity, 0.9 * highlightIntensity, 1.0 * highlightIntensity); 
+                    pGeo.attributes.size.setX(idx, initialSizes[idx] * 1.5);
+                    pGeo.attributes.color.needsUpdate = true; pGeo.attributes.size.needsUpdate = true;
+                    
+                    updateLinkVisuals(idx);
+                    return;
+                }
+            }
+            
+            raycaster.params.Points.threshold = 30; 
+            const bgIntersects = raycaster.intersectObjects(bgInteractables);
+            
+            if (bgIntersects.length > 0) {
+                const obj = bgIntersects[0].object;
+                const parent = obj.userData.parentGroup;
+                
+                if (parent && parent.userData.isBackground) {
+                    const info = parent.userData.info;
+                    resetState(); 
+                    controls.autoRotate = false;
+                    APP_STATE.mode = 'bg_active';
+                    APP_STATE.focusedBgId = parent.userData.templateId;
+                    APP_STATE.targetCoreBrightness = 0.2; 
+                    
+                    updateLinkVisuals(-1); 
+                    
+                    cardTitle.innerText = info.name;
+                    cardLatex.innerText = info.latex || "";
+                    cardDesc.innerText = info.desc;
+                    cardEl.classList.add('show');
+                    return;
+                }
+            }
+
+            resetState();
+            controls.autoRotate = true;
+        }
+        window.addEventListener('pointerdown', onPointerDown);
+
+        const clock = new THREE.Clock();
+        function animate() {
+            requestAnimationFrame(animate); const elapsed = clock.getElapsedTime();
+            
+            APP_STATE.currentCoreBrightness += (APP_STATE.targetCoreBrightness - APP_STATE.currentCoreBrightness) * 0.05;
+            pMat.uniforms.uGlobalBrightness.value = APP_STATE.currentCoreBrightness;
+            lineMat.opacity = APP_STATE.currentCoreBrightness;
+
+            animatedFunctions.forEach(item => {
+                const group = item.group;
+                const templateId = group.userData.templateId;
+                let targetOp = 0.25; let cursorOp = 1.0;
+                
+                if (APP_STATE.mode === 'core_active') { targetOp = 0.05; cursorOp = 0.2; }
+                else if (APP_STATE.mode === 'bg_active') {
+                    if (templateId === APP_STATE.focusedBgId) { targetOp = 0.8; cursorOp = 1.0; }
+                    else { targetOp = 0.0; cursorOp = 0.0; }
+                }
+                
+                item.materials[0].opacity += (targetOp - item.materials[0].opacity) * 0.05;
+                item.materials[1].opacity += (cursorOp - item.materials[1].opacity) * 0.05;
+
+                item.time += 0.02 * item.speed;
+                const func = item.func;
+                const t = func.range[0] + (item.time % (item.func.range[1] - item.func.range[0]));
+                const pos = func.getPos(t).multiplyScalar(item.scale);
+                item.cursor.geometry.attributes.position.setXYZ(0, pos.x, pos.y, pos.z);
+                item.cursor.geometry.attributes.position.needsUpdate = true;
+            });
+
+            pMat.uniforms.uTime.value = elapsed; lineUserData.uTime.value = elapsed;
+            functionSystem.rotation.y = elapsed * 0.02;
+            updateLabelPositions();
+            controls.update(); composer.render();
+        }
+        animate();
+        window.addEventListener('resize', () => { camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight); composer.setSize(window.innerWidth, window.innerHeight); });
+    </script><canvas width="2682" height="1338" style="display: block; width: 1341px; height: 669px;"></canvas>
+
+</body></html>
